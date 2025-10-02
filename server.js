@@ -14,8 +14,8 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", router);
 
-app.get("/",()=>{
-  console.log("kethan gaikwad");
+app.get("/",(req,res)=>{
+  res.send("kethan gaikwad");
   
 })
 
