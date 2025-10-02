@@ -14,6 +14,11 @@ app.use(express.json());
 // Routes
 app.use("/api/contact", router);
 
+app.get("/",()=>{
+  console.log("kethan gaikwad");
+  
+})
+
 // Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
