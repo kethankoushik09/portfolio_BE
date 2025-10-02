@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-export const sendMail = async (req, res) => {
+export const sendMail2 = async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
