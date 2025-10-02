@@ -19,7 +19,7 @@ export const sendMail = async (req, res) => {
 
     // Mail options
     const mailOptions = {
-      from: email,
+      from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER, // your email to receive messages
       subject: `Portfolio Contact Form: ${name}`,
       text: `
